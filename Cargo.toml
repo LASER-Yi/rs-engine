@@ -1,5 +1,5 @@
 [workspace]
-members = ["engine", "app"]
+members = ["engine", "app", "core"]
 
 [workspace.package]
 authors = ["the RS-Engine authors"]
