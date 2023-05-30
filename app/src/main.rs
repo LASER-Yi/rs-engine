@@ -1,7 +1,11 @@
 use engine::RsEngine;
+use std::process;
 
 fn main() {
     let engine = RsEngine::new();
 
-    engine.run()
+    if let Err(e) = engine.run() {
+        eprintln!("The app exits with error: {}", e);
+        process::exit(1);
+    }
 }

@@ -1,3 +1,5 @@
+use std::error::Error;
+
 pub struct RsEngine {}
 
 impl RsEngine {
@@ -5,5 +7,7 @@ impl RsEngine {
         RsEngine {}
     }
 
-    pub fn run(&self) {}
+    pub fn run(&self) -> Result<(), Box<dyn Error>> {
+        Ok(())
+    }
 }

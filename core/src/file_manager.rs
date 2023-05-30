@@ -13,13 +13,3 @@ impl FileManager {
         Ok(FileBlob::new(contents))
     }
 }
-
-// #[cfg(test)]
-// mod tests {
-//     use super::*;
-
-//     #[test]
-//     fn throw_error() {
-//         FileManager::read_file("no_existing_file.txt");
-//     }
-// }
